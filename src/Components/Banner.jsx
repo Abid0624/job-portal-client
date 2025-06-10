@@ -10,16 +10,16 @@ const Banner = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="flex-1">
             <motion.img
-              animate={{ y: [25, 75, 25] }}
+              animate={{ y: [25, 65, 25] }}
               transition={{ duration: 10, repeat: Infinity }}
               src={team1}
-              className="max-w-sm w-72 rounded-t-[40px] rounded-br-[40px] border-l-[6px] border-b-[6px] border-blue-600 shadow-2xl"
+              className="max-w-sm w-40 md:w-72 rounded-t-[40px] rounded-br-[40px] border-l-[6px] border-b-[6px] border-blue-600 shadow-2xl"
             />
             <motion.img
-              animate={{ x: [100, 150, 100] }}
+              animate={{ x: [75, 115, 75] }}
               transition={{ duration: 10, delay: 5, repeat: Infinity }}
               src={team2}
-              className="max-w-sm w-72 rounded-t-[40px] rounded-br-[40px] border-l-[6px] border-b-[6px] border-blue-600 shadow-2xl"
+              className="max-w-sm w-40 md:w-72 rounded-t-[40px] rounded-br-[40px] border-l-[6px] border-b-[6px] border-blue-600 shadow-2xl"
             />
           </div>
           <div className="flex-1">
@@ -43,9 +43,9 @@ const Banner = () => {
               For You!
             </motion.h1>
             <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              Each month, more than 3 million job seekers turn to website in
+              their search for work, making over 140,000 applications every
+              single day
             </p>
             <button className="btn btn-primary">Get Started</button>
           </div>
