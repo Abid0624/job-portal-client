@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import {
   FaMapMarkerAlt,
   FaEnvelope,
@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 
 const JobDetails = () => {
   const {
+    _id,
     title,
     company,
     location,
@@ -101,13 +102,15 @@ const JobDetails = () => {
             </p>
           </div>
 
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-4 md:mt-0 px-6 py-2 rounded-xl bg-blue-600 text-white font-semibold shadow-md hover:bg-blue-700 transition"
-          >
-            Apply Now
-          </motion.button>
+          <Link to={`/jobApply/${_id}`}>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="mt-4 md:mt-0 px-6 py-2 rounded-xl bg-blue-600 text-white font-semibold shadow-md hover:bg-blue-700 transition"
+            >
+              Apply Now
+            </motion.button>
+          </Link>
         </div>
       </div>
     </motion.div>

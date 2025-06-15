@@ -15,7 +15,7 @@ const HotJobCard = ({ job }) => {
   } = job;
   return (
     <div>
-      <div className="card bg-base-100 h-[500px] shadow-sm ">
+      <div className="card  hover:bg-blue-200 bg-blue-50 h-[500px] shadow-xl ">
         <div className="flex justify-center h-[116px] gap-4 items-center">
           <figure>
             <img className="w-16" src={company_logo} alt="company" />
