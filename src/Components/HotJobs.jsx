@@ -21,8 +21,11 @@ const HotJobs = () => {
           Search and connect with the right candidates faster.{" "}
         </p>
         <div className="flex justify-center mt-4 mb-6 flex-wrap gap-4">
-          {uniqueCategories.map((category) => (
-            <div className="px-3 py-2 border rounded-xl border-blue-500 shadow-3xl text-blue-500">
+          {uniqueCategories.map((category, idx) => (
+            <div
+              key={idx}
+              className="px-3 py-2 border rounded-xl border-blue-500 shadow-3xl text-blue-500"
+            >
               {category}
             </div>
           ))}
