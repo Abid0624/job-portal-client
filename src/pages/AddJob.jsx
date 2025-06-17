@@ -93,6 +93,7 @@ const AddJob = () => {
                 <option>Finance</option>
                 <option>Design</option>
                 <option>Teaching</option>
+                <option>Data</option>
               </select>
             </div>
           </div>
